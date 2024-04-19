@@ -41,7 +41,7 @@ drf-extra-fields
 django-filter
 djangorestframework-camel-case
 drf-writable-nested
-commonground-api-common
+git+https://github.com/maykinmedia/commonground-api-common.git@feature/ci-cd-configure-auth
 notifications-api-common
 humanize
 drc-cmis
