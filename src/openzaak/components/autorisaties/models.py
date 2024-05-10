@@ -26,6 +26,11 @@ COMPONENT_TO_FIELD = {
 }
 
 
+class AutorisatieSpecManager(models.Manager):
+    def get_by_natural_key(self, applicatie, component, scopes):
+        return self.get(applicatie=applicatie, component=component, scopes=scopes)
+
+
 class AutorisatieSpec(models.Model):
     """
     Specification for Autorisatie to install.
@@ -55,6 +60,15 @@ class AutorisatieSpec(models.Model):
         help_text=_("Maximaal toegelaten vertrouwelijkheidaanduiding (inclusief)."),
         blank=True,
     )
+
+    objects = AutorisatieSpecManager()
+
+    def natural_key(self):
+        return (
+            self.applicatie,
+            self.component,
+            self.scopes,
+        )
 
     class Meta:
         verbose_name = _("autorisatiespec")

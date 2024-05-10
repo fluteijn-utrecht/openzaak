@@ -712,6 +712,7 @@ SETUP_CONFIGURATION_STEPS = [
     "openzaak.config.bootstrap.notifications.NotificationsAPIConfigurationStep",
     "openzaak.config.bootstrap.selectielijst.SelectielijstAPIConfigurationStep",
     "openzaak.config.bootstrap.demo.DemoUserStep",
+    "openzaak.config.bootstrap.authorizations.AuthorizationConfigurationStep",
 ]
 
 #
@@ -777,3 +778,8 @@ SELECTIELIJST_DEFAULT_YEAR = config("SELECTIELIJST_DEFAULT_YEAR", default=2020)
 DEMO_CONFIG_ENABLE = config("DEMO_CONFIG_ENABLE", default=DEBUG)
 DEMO_CLIENT_ID = config("DEMO_CLIENT_ID", "")
 DEMO_SECRET = config("DEMO_SECRET", "")
+
+AUTHORIZATIONS_CONFIG_ENABLE = config("AUTHORIZATIONS_CONFIG_ENABLE", default=True)
+AUTHORIZATIONS_CONFIG_FIXTURE_PATH = config(
+    "AUTHORIZATIONS_CONFIG_FIXTURE_PATH", default=""
+)
