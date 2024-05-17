@@ -67,6 +67,7 @@ COPY ./bin/uninstall_adfs.sh \
     ./bin/dump_configuration.sh \
     /app/bin/
 COPY ./bin/setup_configuration.sh /setup_configuration.sh
+COPY ./bin/dump_auth_config.sh /dump_auth_config.sh
 
 RUN mkdir /app/log /app/config /app/media /app/private-media
 # prevent writing to the container layer, which would degrade performance.
