@@ -63,7 +63,7 @@ click-repl==0.2.0
     # via celery
 cmislib-maykin==0.7.4
     # via drc-cmis
-commonground-api-common==1.13.0
+commonground-api-common @ git+https://github.com/maykinmedia/commonground-api-common.git@feature/ci-cd-configure-auth
     # via
     #   -r requirements/base.in
     #   drc-cmis
