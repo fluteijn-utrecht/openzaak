@@ -219,8 +219,9 @@ SETUP_CONFIGURATION_STEPS = [
     "openzaak.config.bootstrap.notifications.NotificationsAPIConfigurationStep",
     "openzaak.config.bootstrap.selectielijst.SelectielijstAPIConfigurationStep",
     "openzaak.config.bootstrap.demo.DemoUserStep",
+    "mozilla_django_oidc_db.setupconfig.boostrap.AdminOIDCConfigurationStep",
 ]
-
+OIDC_CALLBACK_CLASS = "mozilla_django_oidc_db.views.OIDCCallbackView"
 #
 # OpenZaak configuration
 #

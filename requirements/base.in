@@ -26,3 +26,5 @@ drf-writable-nested
 notifications-api-common
 humanize
 drc-cmis
+
+mozilla-django-oidc-db[setupconfig]@git+https://github.com/maykinmedia/mozilla-django-oidc-db.git@feature/114-add-django-setup-configuration
