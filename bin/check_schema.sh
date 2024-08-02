@@ -23,7 +23,7 @@ do
 
     diff "openapi-$component.yaml" "src/openzaak/components/$component/openapi.yaml"
 
-    if (( $? > 0 ]; then
+    if (( $? > 0 )); then
         echo "Component src/openzaak/components/$component/openapi.yaml needs to be updated!"
     fi
 done
