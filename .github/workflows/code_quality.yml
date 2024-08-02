@@ -20,6 +20,7 @@ jobs:
     with:
       python-version: '3.11'
       node-version: '18'
+      apt-packages: 'libgdal-dev gdal-bin'
 
       isort-src-pattern: 'src'
       black-src-pattern: 'src docs'
