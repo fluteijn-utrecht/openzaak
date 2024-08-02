@@ -24,7 +24,7 @@ class APIVersioningTests(APITestCase):
                 url = reverse(f"schema-{component}")
 
                 response = self.client.get(f"{url}?format=json")
-
+                self.assertEqual(response.status_code, 200)
                 self.assertIn(
                     "application/vnd.oai.openapi+json", response["Content-Type"]
                 )
@@ -37,6 +37,7 @@ class APIVersioningTests(APITestCase):
                 url = reverse(f"schema-{component}")
 
                 response = self.client.get(url)
+                self.assertEqual(response.status_code, 200)
 
                 self.assertIn("application/vnd.oai.openapi", response["Content-Type"])
                 doc = yaml.safe_load(response.content)
