@@ -21,9 +21,13 @@ for component in "${strings[@]}";
 do
     ./bin/generate_schema_for_component "$component" "openapi-$component.yaml"
 
+    echo "Checking src/openzaak/components/$component/openapi.yaml ..."
+
     diff "openapi-$component.yaml" "src/openzaak/components/$component/openapi.yaml"
 
     if (( $? > 0 )); then
-        echo "Component src/openzaak/components/$component/openapi.yaml needs to be updated!"
+        echo "src/openzaak/components/$component/openapi.yaml needs to be updated!"
+    else
+        echo "src/openzaak/components/$component/openapi.yaml is up-to-date."
     fi
 done
