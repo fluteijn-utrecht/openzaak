@@ -16,7 +16,7 @@ on:
 
 jobs:
   open-api-workflow-code-quality:
-    uses: maykinmedia/open-api-workflows/code-quality.yml@642c3c21552e9fc958ae7b8759fcf4c2794db061
+    uses: maykinmedia/open-api-workflows/.github/workflows/code-quality.yml@initial-setup
     with:
       apt-packages: 'libgdal-dev gdal-bin'
       python-version: '3.11'
