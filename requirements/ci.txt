@@ -385,6 +385,7 @@ idna==3.3
     # via
     #   -r requirements/base.txt
     #   requests
+    #   yarl
 inflection==0.5.1
     # via
     #   -r requirements/base.txt
@@ -447,6 +448,8 @@ mozilla-django-oidc-db==0.16.0
     # via
     #   -r requirements/base.txt
     #   open-api-framework
+multidict==6.0.5
+    # via yarl
 mypy-extensions==1.0.0
     # via black
 notifications-api-common==0.2.2
@@ -560,6 +563,7 @@ pyyaml==6.0
     #   drf-yasg
     #   gemma-zds-client
     #   oyaml
+    #   vcrpy
 qrcode==7.4.2
     # via
     #   -r requirements/base.txt
@@ -648,6 +652,8 @@ uwsgi==2.0.26
     # via
     #   -r requirements/base.txt
     #   open-api-framework
+vcrpy==6.0.1
+    # via -r requirements/test-tools.in
 vine==5.0.0
     # via
     #   -r requirements/base.txt
@@ -677,6 +683,9 @@ wrapt==1.16.0
     #   -r requirements/base.txt
     #   deprecated
     #   elastic-apm
+    #   vcrpy
+yarl==1.9.4
+    # via vcrpy
 zgw-consumers==0.27.0
     # via
     #   -r requirements/base.txt

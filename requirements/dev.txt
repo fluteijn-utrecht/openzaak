@@ -430,6 +430,7 @@ idna==3.3
     # via
     #   -r requirements/ci.txt
     #   requests
+    #   yarl
 imagesize==1.1.0
     # via sphinx
 inflection==0.5.1
@@ -507,6 +508,10 @@ mozilla-django-oidc-db==0.16.0
     # via
     #   -r requirements/ci.txt
     #   open-api-framework
+multidict==6.0.5
+    # via
+    #   -r requirements/ci.txt
+    #   yarl
 mypy-extensions==1.0.0
     # via
     #   -r requirements/ci.txt
@@ -666,6 +671,7 @@ pyyaml==6.0
     #   kubernetes
     #   kubernetes-validate
     #   oyaml
+    #   vcrpy
 qrcode==7.4.2
     # via
     #   -r requirements/ci.txt
@@ -804,6 +810,8 @@ uwsgi==2.0.26
     # via
     #   -r requirements/ci.txt
     #   open-api-framework
+vcrpy==6.0.1
+    # via -r requirements/ci.txt
 vine==5.0.0
     # via
     #   -r requirements/ci.txt
@@ -845,6 +853,11 @@ wrapt==1.16.0
     #   -r requirements/ci.txt
     #   deprecated
     #   elastic-apm
+    #   vcrpy
+yarl==1.9.4
+    # via
+    #   -r requirements/ci.txt
+    #   vcrpy
 zgw-consumers==0.27.0
     # via
     #   -r requirements/ci.txt
